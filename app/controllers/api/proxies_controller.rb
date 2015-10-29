@@ -1,7 +1,7 @@
 class API::ProxiesController < API::BaseController
 
   def index
-    respond_with current_user.proxies.order('id desc')
+    respond_with current_user.proxies.order('id desc').page(params[:page])
   end
 
   def create
