@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   namespace :api do
     resources :registrations, only: :create
     resources :sessions, only: :create
+
+    resources :proxies
     resources :releases
   end
   # The priority is based upon order of creation: first created -> highest priority.
