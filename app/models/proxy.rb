@@ -1,5 +1,6 @@
 class Proxy < ActiveRecord::Base
   belongs_to :user
+  has_many :releases
 
   validates :subdomain, presence: true, uniqueness: true
   validates :endpoint, presence: true
