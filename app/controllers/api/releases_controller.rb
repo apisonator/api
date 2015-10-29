@@ -9,6 +9,12 @@ class API::ReleasesController < API::BaseController
     respond_with @release
   end
 
+  def update
+    @release = current_user.releases.find(params[:id])
+    @release.update_attributes(release_params)
+    respond_with @release
+  end
+
   private
 
   def release_url(release)
@@ -16,6 +22,6 @@ class API::ReleasesController < API::BaseController
   end
 
   def release_params
-    params.permit(:config)
+    params.permit(:config, :done)
   end
 end

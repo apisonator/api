@@ -7,7 +7,8 @@ class API::FunctionsController < API::BaseController
 
   def create
     get_release
-    respond_with @release.functions.create(function_params)
+    @function = @release.functions.create(function_params)
+    respond_with @function
   end
 
   private
