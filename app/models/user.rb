@@ -7,4 +7,5 @@ class User < ActiveRecord::Base
   has_secure_token :api_key
 
   has_many :proxies
+  has_many :releases
 end
