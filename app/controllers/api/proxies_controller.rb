@@ -1,5 +1,9 @@
 class API::ProxiesController < API::BaseController
 
+  def index
+    respond_with current_user.proxies.order('id desc')
+  end
+
   def create
     respond_with @proxy = current_user.proxies.create(proxy_params)
   end
