@@ -5,7 +5,7 @@ class API::ProxiesController < API::BaseController
   end
 
   def create
-    respond_with @proxy = current_user.proxies.create(proxy_params)
+    respond_with current_user.proxies.create(proxy_params)
   end
 
   private

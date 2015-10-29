@@ -8,4 +8,5 @@ class User < ActiveRecord::Base
 
   has_many :proxies
   has_many :releases
+  has_many :functions
 end
