@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   namespace :api do
-    resources :registration
+    resources :registrations
     resources :releases
   end
   # The priority is based upon order of creation: first created -> highest priority.
