@@ -2,10 +2,12 @@ class Proxy < ActiveRecord::Base
   belongs_to :user
   has_many :releases
 
-  validates :subdomain, presence: true, uniqueness: true
+  validates :subdomain, uniqueness: true
   validates :endpoint, presence: true
 
   after_create :set_in_redis
+
+  has_secure_token :subdomain
 
   def key_subdomain
     "at:subdomain:#{subdomain}"
