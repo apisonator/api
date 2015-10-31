@@ -1,0 +1,56 @@
+{
+  "resource": "Releases",
+  "http_method": "POST",
+  "route": "/api/v1/releases",
+  "description": "Creating a release",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "type": "string",
+      "name": "api_key",
+      "description": "API Key"
+    },
+    {
+      "required": true,
+      "type": "string",
+      "name": "config",
+      "description": "YAML with the config"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/releases",
+      "request_body": "api_key=1bZTAUKEhpQtvgYgh5KZDvi5&config=---%0Asubdomain%3A+foo%0A",
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": "request_method=POST"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 181,\n  \"user_id\": 546,\n  \"version\": \"kWSUkMSoKD6mhjBZeWdFv5iR\",\n  \"created_at\": \"2015-11-01T18:28:07.617Z\",\n  \"updated_at\": \"2015-11-01T18:28:07.617Z\",\n  \"config\": \"---\\nsubdomain: foo\\n\",\n  \"proxy_id\": 552,\n  \"done\": false\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Location": "http://example.org/api/releases/181",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"91b0f160e950900b5110f396170cbdf7\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "bf1933f2-de7d-408b-8dce-98b00ac5bcfd",
+        "X-Runtime": "0.026031",
+        "Content-Length": "202"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

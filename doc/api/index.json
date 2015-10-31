@@ -1,0 +1,106 @@
+{
+  "resources": [
+    {
+      "name": "Functions",
+      "examples": [
+        {
+          "description": "Create a function",
+          "link": "functions/create_a_function.json",
+          "groups": "all",
+          "route": "/api/v1/functions",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "Proxies",
+      "examples": [
+        {
+          "description": "Creating a proxy",
+          "link": "proxies/creating_a_proxy.json",
+          "groups": "all",
+          "route": "/api/v1/proxies.json",
+          "method": "post"
+        },
+        {
+          "description": "Listing proxies",
+          "link": "proxies/listing_proxies.json",
+          "groups": "v1",
+          "route": "/api/v1/proxies",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Registrations",
+      "examples": [
+        {
+          "description": "Create an account",
+          "link": "registrations/create_an_account.json",
+          "groups": "all",
+          "route": "/api/v1/registrations",
+          "method": "post"
+        },
+        {
+          "description": "Invalid registration",
+          "link": "registrations/invalid_registration.json",
+          "groups": "all",
+          "route": "/api/v1/registrations",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "Releases",
+      "examples": [
+        {
+          "description": "Creating a release",
+          "link": "releases/creating_a_release.json",
+          "groups": "all",
+          "route": "/api/v1/releases",
+          "method": "post"
+        },
+        {
+          "description": "Listing releases",
+          "link": "releases/listing_releases.json",
+          "groups": "all",
+          "route": "/api/v1/releases",
+          "method": "get"
+        },
+        {
+          "description": "Updating a release",
+          "link": "releases/updating_a_release.json",
+          "groups": "all",
+          "route": "/api/v1/releases/:id",
+          "method": "put"
+        }
+      ]
+    },
+    {
+      "name": "Sessions",
+      "examples": [
+        {
+          "description": "Create a session",
+          "link": "sessions/create_a_session.json",
+          "groups": "all",
+          "route": "/api/v1/sessions",
+          "method": "post"
+        },
+        {
+          "description": "Invalid password",
+          "link": "sessions/invalid_password.json",
+          "groups": "all",
+          "route": "/api/v1/sessions",
+          "method": "post"
+        },
+        {
+          "description": "No registered email",
+          "link": "sessions/no_registered_email.json",
+          "groups": "all",
+          "route": "/api/v1/sessions",
+          "method": "post"
+        }
+      ]
+    }
+  ]
+}

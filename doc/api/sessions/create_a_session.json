@@ -1,0 +1,46 @@
+{
+  "resource": "Sessions",
+  "http_method": "POST",
+  "route": "/api/v1/sessions",
+  "description": "Create a session",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/sessions",
+      "request_body": "email=user1%40example.com&password=12345678",
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 537,\n  \"email\": \"user1@example.com\",\n  \"created_at\": \"2015-11-01T18:28:05.944Z\",\n  \"updated_at\": \"2015-11-01T18:28:05.944Z\",\n  \"api_key\": \"4Tu49oq4WHnqNjBv2HWVzzU9\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Location": "/TODO",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"763dacdf4c3360f0a07a106ddd31713f\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Set-Cookie": "request_method=POST; path=/",
+        "X-Request-Id": "cab1ee6d-2685-41b3-98a9-d75bae0826f0",
+        "X-Runtime": "0.152173",
+        "Content-Length": "155"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

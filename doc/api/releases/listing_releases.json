@@ -1,0 +1,50 @@
+{
+  "resource": "Releases",
+  "http_method": "GET",
+  "route": "/api/v1/releases",
+  "description": "Listing releases",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "type": "string",
+      "name": "api_key",
+      "description": "API Key"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/releases?api_key=iESFxQk1AMcfecrYL6nkamWT",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": "request_method=POST"
+      },
+      "request_query_parameters": {
+        "api_key": "iESFxQk1AMcfecrYL6nkamWT"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 180,\n    \"user_id\": 544,\n    \"version\": \"tQ41729PS1EC2JEQYXRbCxQw\",\n    \"created_at\": \"2015-11-01T18:28:07.338Z\",\n    \"updated_at\": \"2015-11-01T18:28:07.338Z\",\n    \"config\": \"---\\nsubdomain: foo\\n\",\n    \"proxy_id\": 550,\n    \"done\": false\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"b9931bef7739175f66b7dfae506d7791\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Set-Cookie": "request_method=; path=/; max-age=0; expires=Thu, 01 Jan 1970 00:00:00 -0000",
+        "X-Request-Id": "4c4a617d-a6cb-4f7f-8b68-eb3b39e23e87",
+        "X-Runtime": "0.025715",
+        "Content-Length": "204"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

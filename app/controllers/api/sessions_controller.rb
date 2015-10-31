@@ -5,11 +5,11 @@ class API::SessionsController < ApplicationController
   respond_to :json
 
   def create
-    @user = User.find_by(email: params[:email])
+    @user = User.find_by!(email: params[:email])
     if @user.valid_password?(params[:password])
       respond_with @user
     else
-      render status: :unauthorized, body: "unauthorized"
+      render status: :unauthorized, text: {error: "unauthorized"}.to_json
     end
   end
 

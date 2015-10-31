@@ -1,0 +1,59 @@
+{
+  "resource": "Releases",
+  "http_method": "PUT",
+  "route": "/api/v1/releases/:id",
+  "description": "Updating a release",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "type": "string",
+      "name": "api_key",
+      "description": "API Key"
+    },
+    {
+      "required": false,
+      "type": "string",
+      "name": "config",
+      "description": "YAML with the config"
+    },
+    {
+      "required": false,
+      "type": "boolean",
+      "name": "done",
+      "description": "Ready to deploy?"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/api/v1/releases/182",
+      "request_body": "api_key=3kv4zFoNnjuMd9bgKAUhJPX5&config=---%0Asubdomain%3A+foo%0A&done=true",
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": "request_method=POST"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Cache-Control": "no-cache",
+        "Set-Cookie": "request_method=PUT; path=/",
+        "X-Request-Id": "31222b84-6a8c-4b88-b9c8-8777f38c3859",
+        "X-Runtime": "0.026049"
+      },
+      "response_content_type": null,
+      "curl": null
+    }
+  ]
+}

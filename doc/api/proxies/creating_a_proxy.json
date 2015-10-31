@@ -1,0 +1,63 @@
+{
+  "resource": "Proxies",
+  "http_method": "POST",
+  "route": "/api/v1/proxies.json",
+  "description": "Creating a proxy",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "type": "string",
+      "name": "api_key",
+      "description": "API Key"
+    },
+    {
+      "required": true,
+      "type": "string",
+      "name": "endpoint",
+      "description": "URL to proxy"
+    },
+    {
+      "required": false,
+      "type": "string",
+      "name": "subdomain",
+      "description": "Subdomain for the proxy"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/proxies.json",
+      "request_body": "api_key=8eaKkrtfmhuUTMTn9TYsP5X7&endpoint=http%3A%2F%2Ffoo.bar&subdomain=foo",
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 545,\n  \"user_id\": 541,\n  \"subdomain\": \"foo\",\n  \"endpoint\": \"http://foo.bar\",\n  \"created_at\": \"2015-11-01T18:28:06.728Z\",\n  \"updated_at\": \"2015-11-01T18:28:06.728Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Location": "http://example.org/api/proxies/545",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"53d8e3110b1fb0e17d0dbce321c3ed53\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Set-Cookie": "request_method=POST; path=/",
+        "X-Request-Id": "e9c12f6c-b76d-4f7a-9f7e-468184861895",
+        "X-Runtime": "0.033870",
+        "Content-Length": "150"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

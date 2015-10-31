@@ -21,7 +21,9 @@ class Release < ActiveRecord::Base
 
   def parse_config
     data = YAML::load(config)
-    self.proxy = self.user.proxies.find_by(subdomain: data["subdomain"])
+    if self.proxy.blank?
+      self.proxy = self.user.proxies.find_by(subdomain: data["subdomain"])
+    end
   end
 
   def set_in_redis

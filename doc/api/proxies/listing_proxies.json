@@ -1,0 +1,50 @@
+{
+  "resource": "Proxies",
+  "http_method": "GET",
+  "route": "/api/v1/proxies",
+  "description": "Listing proxies",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "type": "string",
+      "name": "api_key",
+      "description": "API Key"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/proxies?api_key=eeeSiJVGXpoVsXgjKQr3tYeX",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Cookie": "request_method=POST"
+      },
+      "request_query_parameters": {
+        "api_key": "eeeSiJVGXpoVsXgjKQr3tYeX"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 548,\n    \"user_id\": 542,\n    \"subdomain\": \"PanFaxFEPTjGEVX8fLy2cfaL\",\n    \"endpoint\": \"http://bar.com\",\n    \"created_at\": \"2015-11-01T18:28:06.906Z\",\n    \"updated_at\": \"2015-11-01T18:28:06.906Z\"\n  },\n  {\n    \"id\": 547,\n    \"user_id\": 542,\n    \"subdomain\": \"95LyerygWL3tBtdaH92P9u2R\",\n    \"endpoint\": \"http://bar.com\",\n    \"created_at\": \"2015-11-01T18:28:06.874Z\",\n    \"updated_at\": \"2015-11-01T18:28:06.874Z\"\n  },\n  {\n    \"id\": 546,\n    \"user_id\": 542,\n    \"subdomain\": \"vAyw4PWZonAuUwSYfNG75Af4\",\n    \"endpoint\": \"http://bar.com\",\n    \"created_at\": \"2015-11-01T18:28:06.846Z\",\n    \"updated_at\": \"2015-11-01T18:28:06.846Z\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"8e06755ac8f14f3585c1218ac2c646cb\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "Set-Cookie": "request_method=; path=/; max-age=0; expires=Thu, 01 Jan 1970 00:00:00 -0000",
+        "X-Request-Id": "35cef28c-e0ac-492d-940a-4bd4f2e0bb91",
+        "X-Runtime": "0.032486",
+        "Content-Length": "517"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
