@@ -30,8 +30,8 @@
   "requests": [
     {
       "request_method": "PUT",
-      "request_path": "/api/v1/releases/182",
-      "request_body": "api_key=3kv4zFoNnjuMd9bgKAUhJPX5&config=---%0Asubdomain%3A+foo%0A&done=true",
+      "request_path": "/api/v1/releases/3",
+      "request_body": "api_key=k4HjAbtvHub7E1sjXDF8mwGQ&config=---%0Asubdomain%3A+foo%0A&done=true",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -49,8 +49,8 @@
         "X-Content-Type-Options": "nosniff",
         "Cache-Control": "no-cache",
         "Set-Cookie": "request_method=PUT; path=/",
-        "X-Request-Id": "31222b84-6a8c-4b88-b9c8-8777f38c3859",
-        "X-Runtime": "0.026049"
+        "X-Request-Id": "f3e11e11-0364-4410-90db-6dd5b52777d6",
+        "X-Runtime": "0.072609"
       },
       "response_content_type": null,
       "curl": null

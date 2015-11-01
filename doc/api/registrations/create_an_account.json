@@ -25,19 +25,19 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 543,\n  \"email\": \"foo@example.com\",\n  \"created_at\": \"2015-11-01T18:28:07.065Z\",\n  \"updated_at\": \"2015-11-01T18:28:07.065Z\",\n  \"api_key\": \"m9nSPAdTBKQw8WDTw2Uiz7Wz\"\n}",
+      "response_body": "{\n  \"id\": 13,\n  \"email\": \"foo@example.com\",\n  \"created_at\": \"2015-11-01T20:33:21.042Z\",\n  \"updated_at\": \"2015-11-01T20:33:21.042Z\",\n  \"api_key\": \"pDyWuNyVNeYjcwCHKrRKqLDy\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Location": "/TODO",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"535b6cbc8334a9b65e67f3e661c41027\"",
+        "ETag": "W/\"1e5446bb80baee62460729e7133d673c\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
         "Set-Cookie": "request_method=POST; path=/",
-        "X-Request-Id": "832096f7-f6aa-4f4b-80bd-d4fcfcd5f09d",
-        "X-Runtime": "0.114760",
-        "Content-Length": "153"
+        "X-Request-Id": "72bfb027-b8b2-4e7f-916c-be67ba9584ae",
+        "X-Runtime": "0.314985",
+        "Content-Length": "152"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

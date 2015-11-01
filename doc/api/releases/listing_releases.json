@@ -18,30 +18,30 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/releases?api_key=iESFxQk1AMcfecrYL6nkamWT",
+      "request_path": "/api/v1/releases?api_key=RXW2gvYr3Bpbz4wsF572qhkQ",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
         "Cookie": "request_method=POST"
       },
       "request_query_parameters": {
-        "api_key": "iESFxQk1AMcfecrYL6nkamWT"
+        "api_key": "RXW2gvYr3Bpbz4wsF572qhkQ"
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 180,\n    \"user_id\": 544,\n    \"version\": \"tQ41729PS1EC2JEQYXRbCxQw\",\n    \"created_at\": \"2015-11-01T18:28:07.338Z\",\n    \"updated_at\": \"2015-11-01T18:28:07.338Z\",\n    \"config\": \"---\\nsubdomain: foo\\n\",\n    \"proxy_id\": 550,\n    \"done\": false\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"user_id\": 3,\n    \"version\": \"qsofxgAYJk1mDC8aMvm4XZC2\",\n    \"created_at\": \"2015-11-01T20:33:17.185Z\",\n    \"updated_at\": \"2015-11-01T20:33:17.185Z\",\n    \"config\": \"---\\nsubdomain: foo\\n\",\n    \"proxy_id\": 6,\n    \"done\": false\n  }\n]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"b9931bef7739175f66b7dfae506d7791\"",
+        "ETag": "W/\"6b54ee99799ad79db06cf9e351d7d62d\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
         "Set-Cookie": "request_method=; path=/; max-age=0; expires=Thu, 01 Jan 1970 00:00:00 -0000",
-        "X-Request-Id": "4c4a617d-a6cb-4f7f-8b68-eb3b39e23e87",
-        "X-Runtime": "0.025715",
-        "Content-Length": "204"
+        "X-Request-Id": "b4996176-fd0d-4dae-9158-ec7de7eccdee",
+        "X-Runtime": "0.065460",
+        "Content-Length": "198"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

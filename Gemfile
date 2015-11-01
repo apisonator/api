@@ -52,8 +52,8 @@ group :development, :test do
 
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl_rails'
-
-gem 'rspec_api_documentation'
+  gem 'database_cleaner'
+  gem 'rspec_api_documentation'
 end
 
 group :development do

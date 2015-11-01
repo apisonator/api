@@ -25,7 +25,7 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/releases",
-      "request_body": "api_key=1bZTAUKEhpQtvgYgh5KZDvi5&config=---%0Asubdomain%3A+foo%0A",
+      "request_body": "api_key=sWcvQJVFJqKcVGAzQQAmuQY3&config=---%0Asubdomain%3A+foo%0A",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -36,18 +36,18 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 181,\n  \"user_id\": 546,\n  \"version\": \"kWSUkMSoKD6mhjBZeWdFv5iR\",\n  \"created_at\": \"2015-11-01T18:28:07.617Z\",\n  \"updated_at\": \"2015-11-01T18:28:07.617Z\",\n  \"config\": \"---\\nsubdomain: foo\\n\",\n  \"proxy_id\": 552,\n  \"done\": false\n}",
+      "response_body": "{\n  \"id\": 2,\n  \"user_id\": 5,\n  \"version\": \"KZ5FKcaJaFGYkg8zhCYZdzYa\",\n  \"created_at\": \"2015-11-01T20:33:17.981Z\",\n  \"updated_at\": \"2015-11-01T20:33:17.981Z\",\n  \"config\": \"---\\nsubdomain: foo\\n\",\n  \"proxy_id\": 8,\n  \"done\": false\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Location": "http://example.org/api/releases/181",
+        "Location": "http://example.org/api/releases/2",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"91b0f160e950900b5110f396170cbdf7\"",
+        "ETag": "W/\"6d1a9c87cc7f529806c7f9cc901d39f8\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "bf1933f2-de7d-408b-8dce-98b00ac5bcfd",
-        "X-Runtime": "0.026031",
-        "Content-Length": "202"
+        "X-Request-Id": "6be1c81d-8ec5-4b04-a115-a586993d3cd3",
+        "X-Runtime": "0.069946",
+        "Content-Length": "196"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null
