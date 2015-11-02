@@ -4,19 +4,14 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  common_api_routes = -> do
-    resources :registrations, only: :create
-    resources :sessions, only: :create
-
-    resources :proxies
-    resources :releases
-    resources :functions
-  end
-
   namespace :api, defaults: {format: 'json'} do
-    common_api_routes.call
     namespace :v1 do
-      common_api_routes.call
+      resources :registrations, only: :create
+      resources :sessions, only: :create
+
+      resources :proxies
+      resources :releases
+      resources :functions
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.
