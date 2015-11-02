@@ -1,8 +1,8 @@
 {
   "resource": "Releases",
   "http_method": "POST",
-  "route": "/api/v1/releases",
-  "description": "Creating a release",
+  "route": "/api/v1/releases/:id/deploy",
+  "description": "Deploy a release",
   "explanation": null,
   "parameters": [
     {
@@ -10,18 +10,6 @@
       "type": "string",
       "name": "api_key",
       "description": "API Key"
-    },
-    {
-      "required": true,
-      "type": "string",
-      "name": "subdomain",
-      "description": "Subdomain"
-    },
-    {
-      "required": true,
-      "type": "object",
-      "name": "config",
-      "description": "Config"
     }
   ],
   "response_fields": [
@@ -30,8 +18,8 @@
   "requests": [
     {
       "request_method": "POST",
-      "request_path": "/api/v1/releases",
-      "request_body": "api_key=JimnQA9XwzcrAnbDj94HdkSG&config[middleware][]=a&config[middleware][]=b&config[middleware][]=c&subdomain=foo",
+      "request_path": "/api/v1/releases/4/deploy",
+      "request_body": "api_key=vQGh5wqtaftUi7yRFkkSWXd6",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -42,19 +30,19 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": null,\n  \"user_id\": null,\n  \"version\": null,\n  \"created_at\": null,\n  \"updated_at\": null,\n  \"config\": {\n    \"middleware\": [\n      \"a\",\n      \"b\",\n      \"c\"\n    ]\n  },\n  \"proxy_id\": 3,\n  \"done\": false\n}",
+      "response_body": "{\n  \"id\": 4,\n  \"user_id\": 5,\n  \"version\": \"eJbSPbhHgkMzLCUnegemfGb3\",\n  \"created_at\": \"2015-11-02T22:42:45.285Z\",\n  \"updated_at\": \"2015-11-02T22:42:45.285Z\",\n  \"config\": {\n    \"middleware\": [\n      \"a\",\n      \"b\",\n      \"c\"\n    ]\n  },\n  \"proxy_id\": 4,\n  \"done\": false\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Location": "http://example.org/api/v1/releases",
+        "Location": "http://example.org/api/v1/releases/4",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"37a983ef682912befb5681bb677094e0\"",
+        "ETag": "W/\"c9cdd9386b6dcadd11a1ebdcd06f1190\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
         "Set-Cookie": "request_method=POST; path=/",
-        "X-Request-Id": "f676f05a-aee0-481e-80d3-51c85ee8764a",
-        "X-Runtime": "0.028767",
-        "Content-Length": "141"
+        "X-Request-Id": "0d8ba2a7-d7d7-4b18-858f-da7e8bc75080",
+        "X-Runtime": "0.023681",
+        "Content-Length": "201"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

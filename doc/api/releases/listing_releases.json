@@ -18,28 +18,28 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/releases?api_key=fvrgeQZVxocDjnsbFB7m9nqw",
+      "request_path": "/api/v1/releases?api_key=zjjF9fPEpN4vmkV5QchQuwz1",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
-        "api_key": "fvrgeQZVxocDjnsbFB7m9nqw"
+        "api_key": "zjjF9fPEpN4vmkV5QchQuwz1"
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 2,\n    \"user_id\": 1,\n    \"version\": \"dR9jwu4xkJpRbWBs62UVAG2S\",\n    \"created_at\": \"2015-11-02T21:57:36.403Z\",\n    \"updated_at\": \"2015-11-02T21:57:36.403Z\",\n    \"config\": {\n      \"middleware\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ]\n    },\n    \"proxy_id\": 1,\n    \"done\": false\n  },\n  {\n    \"id\": 1,\n    \"user_id\": 1,\n    \"version\": \"9UKXR2P7BXFzoifpgYYXzdfx\",\n    \"created_at\": \"2015-11-02T21:57:36.397Z\",\n    \"updated_at\": \"2015-11-02T21:57:36.397Z\",\n    \"config\": {\n      \"middleware\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ]\n    },\n    \"proxy_id\": 1,\n    \"done\": false\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 3,\n    \"user_id\": 3,\n    \"version\": \"MaYpm6B7743iXF5u4mrzzP8g\",\n    \"created_at\": \"2015-11-02T22:42:45.042Z\",\n    \"updated_at\": \"2015-11-02T22:42:45.042Z\",\n    \"config\": {\n      \"middleware\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ]\n    },\n    \"proxy_id\": 2,\n    \"done\": false\n  },\n  {\n    \"id\": 2,\n    \"user_id\": 3,\n    \"version\": \"4tYqH3dbqp9qUHgHvw1AekVN\",\n    \"created_at\": \"2015-11-02T22:42:45.038Z\",\n    \"updated_at\": \"2015-11-02T22:42:45.038Z\",\n    \"config\": {\n      \"middleware\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ]\n    },\n    \"proxy_id\": 2,\n    \"done\": false\n  }\n]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"5e4c5d3e4a9a8177a9b6f7a10e9f21e5\"",
+        "ETag": "W/\"e7dd31c3866698b8b74afe7f2ec3d8d7\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "a2518bc6-cff5-40a6-92f3-43622ea0990f",
-        "X-Runtime": "0.077694",
+        "X-Request-Id": "4e361364-4ebd-4714-a47f-1ac432d11d69",
+        "X-Runtime": "0.026313",
         "Content-Length": "405"
       },
       "response_content_type": "application/json; charset=utf-8",

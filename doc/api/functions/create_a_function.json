@@ -37,7 +37,7 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/functions",
-      "request_body": "api_key=xwRdFnEmX1rDjdpAXZ939jYo&release_id=4&name=name&content=content",
+      "request_body": "api_key=wBNBESEytJzXW7ACv1oZfa5i&release_id=1&name=name&content=content",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -48,18 +48,18 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 1,\n  \"name\": \"name\",\n  \"content\": \"content\",\n  \"release_id\": 4,\n  \"position\": null,\n  \"created_at\": \"2015-11-02T21:57:37.087Z\",\n  \"updated_at\": \"2015-11-02T21:57:37.087Z\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"name\",\n  \"content\": \"content\",\n  \"release_id\": 1,\n  \"position\": null,\n  \"created_at\": \"2015-11-02T22:42:44.913Z\",\n  \"updated_at\": \"2015-11-02T22:42:44.913Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Location": "http://example.org/api/v1/functions/1",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"03e18d9fd8d8d334cee90b340dc19431\"",
+        "ETag": "W/\"870b22353eab50b1ccfd6c67ca9b3df9\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
         "Set-Cookie": "request_method=POST; path=/",
-        "X-Request-Id": "bf7c0ec8-cb18-49e1-8ebd-0e65978e98ae",
-        "X-Runtime": "0.032843",
+        "X-Request-Id": "47383da1-21f1-455f-a214-a874c41abe96",
+        "X-Runtime": "0.090239",
         "Content-Length": "153"
       },
       "response_content_type": "application/json; charset=utf-8",

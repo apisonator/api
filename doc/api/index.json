@@ -61,18 +61,18 @@
           "method": "post"
         },
         {
+          "description": "Deploy a release",
+          "link": "releases/deploy_a_release.json",
+          "groups": "all",
+          "route": "/api/v1/releases/:id/deploy",
+          "method": "post"
+        },
+        {
           "description": "Listing releases",
           "link": "releases/listing_releases.json",
           "groups": "all",
           "route": "/api/v1/releases",
           "method": "get"
-        },
-        {
-          "description": "Updating a release",
-          "link": "releases/updating_a_release.json",
-          "groups": "all",
-          "route": "/api/v1/releases/:id",
-          "method": "put"
         }
       ]
     },
