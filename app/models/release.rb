@@ -32,10 +32,8 @@ class Release < ActiveRecord::Base
       end
 
       $redis.del(key_middleware)
-      config.fetch("middleware",[]).each do |name|
-        if function = self.functions.find{|x| x.name == name}
-          $redis.rpush(key_middleware, function.content)
-        end
+      self.functions.order("position asc").each do |function|
+        $redis.rpush(key_middleware, function.content)
       end
 
       $redis.set(key_release, id)

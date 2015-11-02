@@ -31,7 +31,7 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/proxies.json",
-      "request_body": "api_key=YFsLfNW2F6W2YtuwdMs47ALy&endpoint=http%3A%2F%2Ffoo.bar&subdomain=foo",
+      "request_body": "api_key=8ueioyQzEbU2CCt9xLJxk5Ss&endpoint=http%3A%2F%2Ffoo.bar&subdomain=foo",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -42,18 +42,18 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 8,\n  \"user_id\": 7,\n  \"subdomain\": \"foo\",\n  \"endpoint\": \"http://foo.bar\",\n  \"created_at\": \"2015-11-02T22:42:45.608Z\",\n  \"updated_at\": \"2015-11-02T22:42:45.608Z\"\n}",
+      "response_body": "{\n  \"id\": 4,\n  \"user_id\": 8,\n  \"subdomain\": \"foo\",\n  \"endpoint\": \"http://foo.bar\",\n  \"created_at\": \"2015-11-02T23:04:54.573Z\",\n  \"updated_at\": \"2015-11-02T23:04:54.573Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Location": "http://example.org/api/v1/proxies/8",
+        "Location": "http://example.org/api/v1/proxies/4",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"bb01888db81bc7610b309c0700c85b32\"",
+        "ETag": "W/\"529748d24058c96cff691a439b4ad77c\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
         "Set-Cookie": "request_method=POST; path=/",
-        "X-Request-Id": "66cae521-43d8-4080-9cbd-a57631a9b76c",
-        "X-Runtime": "0.022442",
+        "X-Request-Id": "99f77003-33e1-4e4e-aa6a-5f03489a5356",
+        "X-Runtime": "0.033187",
         "Content-Length": "146"
       },
       "response_content_type": "application/json; charset=utf-8",

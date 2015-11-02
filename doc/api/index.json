@@ -9,6 +9,20 @@
           "groups": "all",
           "route": "/api/v1/functions",
           "method": "post"
+        },
+        {
+          "description": "Get a function",
+          "link": "functions/get_a_function.json",
+          "groups": "all",
+          "route": "/api/v1/functions/:id",
+          "method": "get"
+        },
+        {
+          "description": "Get the functions list",
+          "link": "functions/get_the_functions_list.json",
+          "groups": "all",
+          "route": "/api/v1/functions",
+          "method": "get"
         }
       ]
     },

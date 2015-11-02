@@ -4,7 +4,12 @@ module API
 
       def index
         get_release
-        respond_with @release.functions.order('id desc').page(params[:page])
+        respond_with @release.functions.order('position asc').page(params[:page])
+      end
+
+      def show
+        get_release
+        respond_with @release.functions.find(params[:id])
       end
 
       def create
@@ -24,7 +29,7 @@ module API
       end
 
       def function_params
-        params.permit(:name, :content)
+        params.permit(:name, :content, :position)
       end
     end
   end

@@ -10,12 +10,12 @@ Rails.application.routes.draw do
       resources :sessions, only: :create
 
       resources :proxies
-      resources :releases, only: [:index, :create, :show] do
+      resources :releases, only: [:create, :show, :index] do
         member do
           post :deploy
         end
       end
-      resources :functions
+      resources :functions, only: [:create, :show, :index]
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.

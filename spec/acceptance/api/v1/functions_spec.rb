@@ -17,14 +17,32 @@ resource 'Functions' do
 
   parameter :api_key, 'API Key', required: true, type: :string
   parameter :release_id, 'Release ID', required: true, type: :integer
+  post '/api/v1/functions' do
   parameter :name, 'Name of the function', required: true, type: :string
   parameter :content, 'Content of the function', required: true, type: :string
+  parameter :position, 'Position', required: false, type: :string
 
-  post '/api/v1/functions' do
     example 'Create a function' do
-
-      do_request(name: 'name', content: 'content')
+      do_request(name: 'name', content: 'content', position: 2)
       expect(status).to be 201
     end
   end
+
+  get '/api/v1/functions/:id' do
+    example 'Get a function' do
+      function = create(:function, release: @release)
+      do_request(id: function.id)
+      expect(status).to be 200
+    end
+  end
+
+  get '/api/v1/functions' do
+    example 'Get the functions list' do
+      create(:function, release: @release)
+      do_request(release_id: release_id)
+      expect(status).to be 200
+    end
+  end
+
+
 end
