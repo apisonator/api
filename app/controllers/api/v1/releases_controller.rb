@@ -13,7 +13,6 @@ module API
 
       def update
         @release = current_user.releases.find(params[:id])
-        @release.config = params[:config]
         @release.update_attributes(release_params)
         respond_with @release
       end

@@ -18,23 +18,31 @@ class Release < ActiveRecord::Base
     "at:middleware:#{proxy.subdomain}"
   end
 
+  def key_release
+    "at:release:#{proxy.subdomain}"
+  end
+
   private
 
   def set_in_redis
     if done
-      $redis.del(key_addons)
-      config.fetch("addons", {}).each_pair do |addon_name, addon_config|
-        $redis.rpush(key_addons, addon_name)
-        addon_config.each_pair do |key, value|
-          $redis.hset("#{key_addons}:config", key, value)
+      $redis.multi do
+        $redis.del(key_addons)
+        config.fetch("addons", {}).each_pair do |addon_name, addon_config|
+          $redis.rpush(key_addons, addon_name)
+          addon_config.each_pair do |key, value|
+            $redis.hset("#{key_addons}:config", key, value)
+          end
         end
-      end
 
-      $redis.del(key_middleware)
-      config.fetch("middleware",[]).each do |name|
-        if function = functions.find{|x| x.name == name}
-          $redis.rpush(key_middleware, function.content)
+        $redis.del(key_middleware)
+        config.fetch("middleware",[]).each do |name|
+          if function = self.functions.find{|x| x.name == name}
+            $redis.rpush(key_middleware, function.content)
+          end
         end
+
+        $redis.set(key_release, id)
       end
     end
   end
