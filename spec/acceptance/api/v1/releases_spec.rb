@@ -5,11 +5,7 @@ resource 'Releases' do
 
   before do
     @user = create(:user)
-    create(:proxy)
-
-    no_doc do
-      client.post '/api/v1/proxies', { api_key: api_key, endpoint: 'http://bar.com', subdomain: 'foo' }
-    end
+    @proxy = create(:proxy, subdomain: 'foo', user: @user)
   end
 
   let(:api_key) {
@@ -17,42 +13,39 @@ resource 'Releases' do
   }
 
   let(:config) {
-    {'subdomain' => 'foo'}.to_yaml
+    {'middleware' => [:a, :b, :c]}
   }
 
   parameter :api_key, 'API Key', required: true, type: :string
-  get '/api/v1/releases' do
 
+  get '/api/v1/releases' do
     example 'Listing releases' do
-      no_doc do
-        client.post '/api/v1/releases', { api_key: api_key, config: config }
-      end
+      release = create(:release, proxy: @proxy, user: @user)
+      release = create(:release, proxy: @proxy, user: @user)
       do_request
       expect(status).to be 200
     end
   end
 
   post '/api/v1/releases' do
-    parameter :config, 'YAML with the config', required: true, type: :string
+    parameter :done, 'Ready to deploy?', required: false, type: :boolean
+    parameter :subdomain, 'Subdomain', required: true, type: :string
+    parameter :config, 'Config', required: true, type: :object
 
     example 'Creating a release' do
-
-      do_request(config: config)
-
+      do_request(subdomain: 'foo', config: config)
       expect(status).to be 201
     end
   end
 
   put '/api/v1/releases/:id' do
-    parameter :config, 'YAML with the config', required: false, type: :string
     parameter :done, 'Ready to deploy?', required: false, type: :boolean
+    parameter :config, 'Config', required: true, type: :object
 
     example 'Updating a release' do
-      no_doc do
-        client.post '/api/v1/releases', { api_key: api_key, config: config }
-      end
+      release = create(:release, proxy: @proxy, user: @user)
 
-      do_request(config: config, done: true, id: @user.releases.last.id)
+      do_request(done: true, id: release.id)
 
       expect(status).to be 204
     end

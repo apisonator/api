@@ -13,15 +13,15 @@
     },
     {
       "required": false,
-      "type": "string",
-      "name": "config",
-      "description": "YAML with the config"
-    },
-    {
-      "required": false,
       "type": "boolean",
       "name": "done",
       "description": "Ready to deploy?"
+    },
+    {
+      "required": true,
+      "type": "object",
+      "name": "config",
+      "description": "Config"
     }
   ],
   "response_fields": [
@@ -31,11 +31,11 @@
     {
       "request_method": "PUT",
       "request_path": "/api/v1/releases/3",
-      "request_body": "api_key=k4HjAbtvHub7E1sjXDF8mwGQ&config=---%0Asubdomain%3A+foo%0A&done=true",
+      "request_body": "api_key=z7HDyiAB5coNLNzYX5e1BLQ5&config[middleware][]=a&config[middleware][]=b&config[middleware][]=c&done=true",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
-        "Cookie": "request_method=POST"
+        "Cookie": ""
       },
       "request_query_parameters": {
       },
@@ -49,8 +49,8 @@
         "X-Content-Type-Options": "nosniff",
         "Cache-Control": "no-cache",
         "Set-Cookie": "request_method=PUT; path=/",
-        "X-Request-Id": "f3e11e11-0364-4410-90db-6dd5b52777d6",
-        "X-Runtime": "0.072609"
+        "X-Request-Id": "a75d4e2f-e012-4f90-bf20-418eb7bc8bb6",
+        "X-Runtime": "0.032301"
       },
       "response_content_type": null,
       "curl": null

@@ -2,6 +2,6 @@ FactoryGirl.define do
   factory :release do
     proxy
     user
-    config({'endpoint' => 'foo'}.to_yaml)
+    config({'middleware' => [:a, :b, :c]})
   end
 end

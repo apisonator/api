@@ -18,30 +18,29 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/releases?api_key=RXW2gvYr3Bpbz4wsF572qhkQ",
+      "request_path": "/api/v1/releases?api_key=fvrgeQZVxocDjnsbFB7m9nqw",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
-        "Cookie": "request_method=POST"
+        "Cookie": ""
       },
       "request_query_parameters": {
-        "api_key": "RXW2gvYr3Bpbz4wsF572qhkQ"
+        "api_key": "fvrgeQZVxocDjnsbFB7m9nqw"
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 1,\n    \"user_id\": 3,\n    \"version\": \"qsofxgAYJk1mDC8aMvm4XZC2\",\n    \"created_at\": \"2015-11-01T20:33:17.185Z\",\n    \"updated_at\": \"2015-11-01T20:33:17.185Z\",\n    \"config\": \"---\\nsubdomain: foo\\n\",\n    \"proxy_id\": 6,\n    \"done\": false\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 2,\n    \"user_id\": 1,\n    \"version\": \"dR9jwu4xkJpRbWBs62UVAG2S\",\n    \"created_at\": \"2015-11-02T21:57:36.403Z\",\n    \"updated_at\": \"2015-11-02T21:57:36.403Z\",\n    \"config\": {\n      \"middleware\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ]\n    },\n    \"proxy_id\": 1,\n    \"done\": false\n  },\n  {\n    \"id\": 1,\n    \"user_id\": 1,\n    \"version\": \"9UKXR2P7BXFzoifpgYYXzdfx\",\n    \"created_at\": \"2015-11-02T21:57:36.397Z\",\n    \"updated_at\": \"2015-11-02T21:57:36.397Z\",\n    \"config\": {\n      \"middleware\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ]\n    },\n    \"proxy_id\": 1,\n    \"done\": false\n  }\n]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"6b54ee99799ad79db06cf9e351d7d62d\"",
+        "ETag": "W/\"5e4c5d3e4a9a8177a9b6f7a10e9f21e5\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "Set-Cookie": "request_method=; path=/; max-age=0; expires=Thu, 01 Jan 1970 00:00:00 -0000",
-        "X-Request-Id": "b4996176-fd0d-4dae-9158-ec7de7eccdee",
-        "X-Runtime": "0.065460",
-        "Content-Length": "198"
+        "X-Request-Id": "a2518bc6-cff5-40a6-92f3-43622ea0990f",
+        "X-Runtime": "0.077694",
+        "Content-Length": "405"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

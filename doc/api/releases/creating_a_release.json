@@ -12,10 +12,22 @@
       "description": "API Key"
     },
     {
+      "required": false,
+      "type": "boolean",
+      "name": "done",
+      "description": "Ready to deploy?"
+    },
+    {
       "required": true,
       "type": "string",
+      "name": "subdomain",
+      "description": "Subdomain"
+    },
+    {
+      "required": true,
+      "type": "object",
       "name": "config",
-      "description": "YAML with the config"
+      "description": "Config"
     }
   ],
   "response_fields": [
@@ -25,29 +37,30 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/releases",
-      "request_body": "api_key=sWcvQJVFJqKcVGAzQQAmuQY3&config=---%0Asubdomain%3A+foo%0A",
+      "request_body": "api_key=NgzXskm2RimDiZCUiZuxw8nf&config[middleware][]=a&config[middleware][]=b&config[middleware][]=c&subdomain=foo",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
-        "Cookie": "request_method=POST"
+        "Cookie": ""
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 2,\n  \"user_id\": 5,\n  \"version\": \"KZ5FKcaJaFGYkg8zhCYZdzYa\",\n  \"created_at\": \"2015-11-01T20:33:17.981Z\",\n  \"updated_at\": \"2015-11-01T20:33:17.981Z\",\n  \"config\": \"---\\nsubdomain: foo\\n\",\n  \"proxy_id\": 8,\n  \"done\": false\n}",
+      "response_body": "{\n  \"id\": null,\n  \"user_id\": null,\n  \"version\": null,\n  \"created_at\": null,\n  \"updated_at\": null,\n  \"config\": {\n    \"middleware\": [\n      \"a\",\n      \"b\",\n      \"c\"\n    ]\n  },\n  \"proxy_id\": 2,\n  \"done\": false\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Location": "http://example.org/api/releases/2",
+        "Location": "http://example.org/api/v1/releases",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"6d1a9c87cc7f529806c7f9cc901d39f8\"",
+        "ETag": "W/\"a22305dddf23a931587c971cb61bf643\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "6be1c81d-8ec5-4b04-a115-a586993d3cd3",
-        "X-Runtime": "0.069946",
-        "Content-Length": "196"
+        "Set-Cookie": "request_method=POST; path=/",
+        "X-Request-Id": "d0028cba-3e75-4909-b92d-6ef3eb7ced52",
+        "X-Runtime": "0.030974",
+        "Content-Length": "141"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null
