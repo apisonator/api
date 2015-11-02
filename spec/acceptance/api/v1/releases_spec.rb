@@ -28,7 +28,6 @@ resource 'Releases' do
   end
 
   post '/api/v1/releases' do
-    parameter :done, 'Ready to deploy?', required: false, type: :boolean
     parameter :subdomain, 'Subdomain', required: true, type: :string
     parameter :config, 'Config', required: true, type: :object
 
@@ -38,16 +37,13 @@ resource 'Releases' do
     end
   end
 
-  put '/api/v1/releases/:id' do
-    parameter :done, 'Ready to deploy?', required: false, type: :boolean
-    parameter :config, 'Config', required: true, type: :object
-
-    example 'Updating a release' do
+  post '/api/v1/releases/:id/deploy' do
+    example 'Deploy a release' do
       release = create(:release, proxy: @proxy, user: @user)
 
-      do_request(done: true, id: release.id)
+      do_request(id: release.id)
 
-      expect(status).to be 204
+      expect(status).to be 201
     end
   end
 

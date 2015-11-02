@@ -11,9 +11,9 @@ module API
         respond_with @release
       end
 
-      def update
+      def deploy
         @release = current_user.releases.find(params[:id])
-        @release.update_attributes(release_params)
+        @release.deploy!
         respond_with @release
       end
 

@@ -10,7 +10,11 @@ Rails.application.routes.draw do
       resources :sessions, only: :create
 
       resources :proxies
-      resources :releases
+      resources :releases, only: [:index, :create, :show] do
+        member do
+          post :deploy
+        end
+      end
       resources :functions
     end
   end

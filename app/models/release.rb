@@ -8,7 +8,6 @@ class Release < ActiveRecord::Base
   has_secure_token :version
 
   validates :proxy, presence: true
-  after_save :set_in_redis
 
   def key_addons
     "at:addons:#{proxy.subdomain}"
@@ -22,29 +21,24 @@ class Release < ActiveRecord::Base
     "at:release:#{proxy.subdomain}"
   end
 
-  private
-
-  def set_in_redis
-    if done
-      $redis.multi do
-        $redis.del(key_addons)
-        config.fetch("addons", {}).each_pair do |addon_name, addon_config|
-          $redis.rpush(key_addons, addon_name)
-          addon_config.each_pair do |key, value|
-            $redis.hset("#{key_addons}:config", key, value)
-          end
+  def deploy!
+    $redis.multi do
+      $redis.del(key_addons)
+      config.fetch("addons", {}).each_pair do |addon_name, addon_config|
+        $redis.rpush(key_addons, addon_name)
+        addon_config.each_pair do |key, value|
+          $redis.hset("#{key_addons}:config", key, value)
         end
-
-        $redis.del(key_middleware)
-        config.fetch("middleware",[]).each do |name|
-          if function = self.functions.find{|x| x.name == name}
-            $redis.rpush(key_middleware, function.content)
-          end
-        end
-
-        $redis.set(key_release, id)
       end
+
+      $redis.del(key_middleware)
+      config.fetch("middleware",[]).each do |name|
+        if function = self.functions.find{|x| x.name == name}
+          $redis.rpush(key_middleware, function.content)
+        end
+      end
+
+      $redis.set(key_release, id)
     end
   end
-
 end
