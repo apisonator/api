@@ -16,9 +16,13 @@ resource 'Releases' do
     {'middleware' => [:a, :b, :c]}
   }
 
+  let(:subdomain) {
+    @proxy.subdomain
+  }
+
   parameter :api_key, 'API Key', required: true, type: :string
 
-  get '/api/v1/proxies/:proxy_id/releases' do
+  get '/api/v1/proxies/:subdomain/releases' do
     example 'Listing releases' do
       release = create(:release, proxy: @proxy, user: @user)
       release = create(:release, proxy: @proxy, user: @user)
@@ -27,17 +31,17 @@ resource 'Releases' do
     end
   end
 
-  post '/api/v1/proxies/:proxy_id/releases' do
+  post '/api/v1/proxies/:subdomain/releases' do
     parameter :subdomain, 'Subdomain', required: true, type: :string
     parameter :config, 'Config', required: true, type: :object
 
     example 'Creating a release' do
-      do_request(subdomain: 'foo', config: config)
+      do_request(config: config)
       expect(status).to be 201
     end
   end
 
-  post '/api/v1/proxies/:proxy_id/releases/:id/deploy' do
+  post '/api/v1/proxies/:subdomain/releases/:id/deploy' do
     example 'Deploy a release' do
       release = create(:release, proxy: @proxy, user: @user)
 

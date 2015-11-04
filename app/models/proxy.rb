@@ -2,7 +2,7 @@ class Proxy < ActiveRecord::Base
   belongs_to :user
   has_many :releases
 
-  validates :subdomain, uniqueness: true, format: { with: /\A\w[\w\-\/_]+\z/ }
+  validates :subdomain, uniqueness: true, format: { with: /\A\w[\w\-\/_]+\z/, allow_nil: true }
   validates :endpoint, presence: true
 
   after_create :set_in_redis

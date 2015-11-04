@@ -71,21 +71,21 @@
           "description": "Creating a release",
           "link": "releases/creating_a_release.json",
           "groups": "all",
-          "route": "/api/v1/proxies/:proxy_id/releases",
+          "route": "/api/v1/proxies/:subdomain/releases",
           "method": "post"
         },
         {
           "description": "Deploy a release",
           "link": "releases/deploy_a_release.json",
           "groups": "all",
-          "route": "/api/v1/proxies/:proxy_id/releases/:id/deploy",
+          "route": "/api/v1/proxies/:subdomain/releases/:id/deploy",
           "method": "post"
         },
         {
           "description": "Listing releases",
           "link": "releases/listing_releases.json",
           "groups": "all",
-          "route": "/api/v1/proxies/:proxy_id/releases",
+          "route": "/api/v1/proxies/:subdomain/releases",
           "method": "get"
         }
       ]

@@ -20,7 +20,7 @@ module API
       private
 
       def proxy
-        @proxy ||= current_user.proxies.find_by!(subdomain: params[:subdomain])
+        @proxy ||= current_user.proxies.find_by!(subdomain: params[:proxy_id])
       end
 
       def releases_url
