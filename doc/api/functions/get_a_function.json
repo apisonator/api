@@ -1,7 +1,7 @@
 {
   "resource": "Functions",
   "http_method": "GET",
-  "route": "/api/v1/functions/:id",
+  "route": "/api/v1/releases/:release_id/functions/:id",
   "description": "Get a function",
   "explanation": null,
   "parameters": [
@@ -24,29 +24,28 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/functions/1?api_key=6tWN9zaN1gL8WhirjvyTziqU&release_id=1",
+      "request_path": "/api/v1/releases/1/functions/1?api_key=dFvksxLe5ZxzqfVdnsh8RVaX",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
-        "api_key": "6tWN9zaN1gL8WhirjvyTziqU",
-        "release_id": "1"
+        "api_key": "dFvksxLe5ZxzqfVdnsh8RVaX"
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 1,\n  \"name\": \"name\",\n  \"content\": \"content\",\n  \"release_id\": 1,\n  \"position\": null,\n  \"created_at\": \"2015-11-02T23:04:53.787Z\",\n  \"updated_at\": \"2015-11-02T23:04:53.787Z\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"name\",\n  \"content\": \"content\",\n  \"release_id\": 1,\n  \"position\": null,\n  \"created_at\": \"2015-11-04T17:58:02.792Z\",\n  \"updated_at\": \"2015-11-04T17:58:02.792Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"133de6121a6816ec313aa3fe3614fc38\"",
+        "ETag": "W/\"d46f35136ae1232949d3b4154b1b7e3c\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "8e757cb4-2fd1-4646-b76b-7d1fd417f18e",
-        "X-Runtime": "0.076197",
+        "X-Request-Id": "0dc39e5f-f78f-4759-b924-cc1480f45938",
+        "X-Runtime": "0.046800",
         "Content-Length": "153"
       },
       "response_content_type": "application/json; charset=utf-8",

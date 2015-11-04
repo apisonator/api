@@ -18,7 +18,7 @@ resource 'Releases' do
 
   parameter :api_key, 'API Key', required: true, type: :string
 
-  get '/api/v1/releases' do
+  get '/api/v1/proxies/:proxy_id/releases' do
     example 'Listing releases' do
       release = create(:release, proxy: @proxy, user: @user)
       release = create(:release, proxy: @proxy, user: @user)
@@ -27,7 +27,7 @@ resource 'Releases' do
     end
   end
 
-  post '/api/v1/releases' do
+  post '/api/v1/proxies/:proxy_id/releases' do
     parameter :subdomain, 'Subdomain', required: true, type: :string
     parameter :config, 'Config', required: true, type: :object
 
@@ -37,7 +37,7 @@ resource 'Releases' do
     end
   end
 
-  post '/api/v1/releases/:id/deploy' do
+  post '/api/v1/proxies/:proxy_id/releases/:id/deploy' do
     example 'Deploy a release' do
       release = create(:release, proxy: @proxy, user: @user)
 

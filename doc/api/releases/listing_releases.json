@@ -1,7 +1,7 @@
 {
   "resource": "Releases",
   "http_method": "GET",
-  "route": "/api/v1/releases",
+  "route": "/api/v1/proxies/:proxy_id/releases",
   "description": "Listing releases",
   "explanation": null,
   "parameters": [
@@ -18,29 +18,29 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/releases?api_key=tXALA411nagWaKi2EY812qy3",
+      "request_path": "/api/v1/proxies/:proxy_id/releases?api_key=oGSdwueBpEHEoGhbxYpqF3LT",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
-        "api_key": "tXALA411nagWaKi2EY812qy3"
+        "api_key": "oGSdwueBpEHEoGhbxYpqF3LT"
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 5,\n    \"user_id\": 10,\n    \"version\": \"qXw7ju94htvYa9DEfZVf2jXx\",\n    \"created_at\": \"2015-11-02T23:04:54.885Z\",\n    \"updated_at\": \"2015-11-02T23:04:54.885Z\",\n    \"config\": {\n      \"middleware\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ]\n    },\n    \"proxy_id\": 8,\n    \"done\": false\n  },\n  {\n    \"id\": 4,\n    \"user_id\": 10,\n    \"version\": \"2oMggVM4YXckNHZP4FFWHeYG\",\n    \"created_at\": \"2015-11-02T23:04:54.880Z\",\n    \"updated_at\": \"2015-11-02T23:04:54.880Z\",\n    \"config\": {\n      \"middleware\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ]\n    },\n    \"proxy_id\": 8,\n    \"done\": false\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 5,\n    \"user_id\": 9,\n    \"version\": \"UvTvCruPt4Lji17emjcaD3ta\",\n    \"created_at\": \"2015-11-04T17:58:03.569Z\",\n    \"updated_at\": \"2015-11-04T17:58:03.569Z\",\n    \"config\": {\n      \"middleware\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ]\n    },\n    \"proxy_id\": 5,\n    \"done\": false\n  },\n  {\n    \"id\": 4,\n    \"user_id\": 9,\n    \"version\": \"Am4dF8CBJJpyA5Fako7dLA6y\",\n    \"created_at\": \"2015-11-04T17:58:03.565Z\",\n    \"updated_at\": \"2015-11-04T17:58:03.565Z\",\n    \"config\": {\n      \"middleware\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ]\n    },\n    \"proxy_id\": 5,\n    \"done\": false\n  }\n]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"8c1b24b43524c6d8f43bdba1d2bba5db\"",
+        "ETag": "W/\"9025576ec26fb1f4be40ae60e621f4b0\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "7219ef2c-af83-4705-ac94-558f7a6ae6f3",
-        "X-Runtime": "0.026298",
-        "Content-Length": "407"
+        "X-Request-Id": "222e0d28-4198-4e38-9b70-018518d2561a",
+        "X-Runtime": "0.024661",
+        "Content-Length": "405"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

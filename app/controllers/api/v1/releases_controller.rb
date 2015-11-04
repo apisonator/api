@@ -8,13 +8,13 @@ module API
       def create
         @release = proxy.releases.build(release_params)
         @release.config = params[:config]
-        respond_with @release
+        respond_with :api, :v1, @proxy, @release
       end
 
       def deploy
         @release = current_user.releases.find(params[:id])
         @release.deploy!
-        respond_with @release
+        respond_with :api, :v1, @proxy, @release
       end
 
       private

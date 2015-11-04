@@ -1,7 +1,7 @@
 {
   "resource": "Functions",
   "http_method": "POST",
-  "route": "/api/v1/functions",
+  "route": "/api/v1/releases/:release_id/functions",
   "description": "Create a function",
   "explanation": null,
   "parameters": [
@@ -42,8 +42,8 @@
   "requests": [
     {
       "request_method": "POST",
-      "request_path": "/api/v1/functions",
-      "request_body": "api_key=nEX3qhfRKHGMfbcWp6VFbYCv&release_id=2&name=name&content=content&position=2",
+      "request_path": "/api/v1/releases/2/functions",
+      "request_body": "api_key=ar3Jygrr1kxVfdVDygAzg67f&name=name&content=content&position=2",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -54,18 +54,18 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 2,\n  \"name\": \"name\",\n  \"content\": \"content\",\n  \"release_id\": 2,\n  \"position\": 2,\n  \"created_at\": \"2015-11-02T23:04:54.081Z\",\n  \"updated_at\": \"2015-11-02T23:04:54.081Z\"\n}",
+      "response_body": "{\n  \"id\": 2,\n  \"name\": \"name\",\n  \"content\": \"content\",\n  \"release_id\": 2,\n  \"position\": 2,\n  \"created_at\": \"2015-11-04T17:58:03.057Z\",\n  \"updated_at\": \"2015-11-04T17:58:03.057Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Location": "http://example.org/api/v1/functions/2",
+        "Location": "http://example.org/api/v1/releases/2/functions/2",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"ebcd16b3d860054546f498a21c5b4fe9\"",
+        "ETag": "W/\"dda4cb266993af61ec5fc3484a581ea9\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
         "Set-Cookie": "request_method=POST; path=/",
-        "X-Request-Id": "727519b5-d9e6-4517-ae9b-89639bceefa6",
-        "X-Runtime": "0.027450",
+        "X-Request-Id": "1fd2a692-0766-4d7e-b0b4-d8f19e1fc344",
+        "X-Runtime": "0.029887",
         "Content-Length": "150"
       },
       "response_content_type": "application/json; charset=utf-8",

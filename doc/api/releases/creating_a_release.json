@@ -1,7 +1,7 @@
 {
   "resource": "Releases",
   "http_method": "POST",
-  "route": "/api/v1/releases",
+  "route": "/api/v1/proxies/:proxy_id/releases",
   "description": "Creating a release",
   "explanation": null,
   "parameters": [
@@ -30,8 +30,8 @@
   "requests": [
     {
       "request_method": "POST",
-      "request_path": "/api/v1/releases",
-      "request_body": "api_key=enDW4RYgk8H7ucMD48Br4HhE&config[middleware][]=a&config[middleware][]=b&config[middleware][]=c&subdomain=foo",
+      "request_path": "/api/v1/proxies/:proxy_id/releases",
+      "request_body": "api_key=PabRu8hXMRKA5Zy68ktd6dnc&config[middleware][]=a&config[middleware][]=b&config[middleware][]=c&subdomain=foo",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -42,19 +42,19 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": null,\n  \"user_id\": null,\n  \"version\": null,\n  \"created_at\": null,\n  \"updated_at\": null,\n  \"config\": {\n    \"middleware\": [\n      \"a\",\n      \"b\",\n      \"c\"\n    ]\n  },\n  \"proxy_id\": 10,\n  \"done\": false\n}",
+      "response_body": "{\n  \"id\": null,\n  \"user_id\": null,\n  \"version\": null,\n  \"created_at\": null,\n  \"updated_at\": null,\n  \"config\": {\n    \"middleware\": [\n      \"a\",\n      \"b\",\n      \"c\"\n    ]\n  },\n  \"proxy_id\": 4,\n  \"done\": false\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Location": "http://example.org/api/v1/releases",
+        "Location": "http://example.org/api/v1/proxies/4/releases",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"bdcf30af6c51ac95ec5b969e78375da5\"",
+        "ETag": "W/\"4c4f0104a5128f7b0f05927574f5c1d4\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
         "Set-Cookie": "request_method=POST; path=/",
-        "X-Request-Id": "1cd2b698-7183-4fd2-88c9-160cd657aa9f",
-        "X-Runtime": "0.025546",
-        "Content-Length": "142"
+        "X-Request-Id": "d3a9fe6d-dee3-4100-8a9d-2b3f71469c26",
+        "X-Runtime": "0.038685",
+        "Content-Length": "141"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null
