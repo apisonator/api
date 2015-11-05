@@ -42,8 +42,8 @@
   "requests": [
     {
       "request_method": "POST",
-      "request_path": "/api/v1/releases/6/functions",
-      "request_body": "api_key=o5mULuafaX6n546zZnhECTKk&name=name&content=content&position=2",
+      "request_path": "/api/v1/releases/3/functions",
+      "request_body": "api_key=ExNCUUs7tK9KeZraqgX3JmHF&name=name&content=content&position=2",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -54,18 +54,18 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 3,\n  \"name\": \"name\",\n  \"content\": \"content\",\n  \"release_id\": 6,\n  \"position\": 2,\n  \"created_at\": \"2015-11-04T18:13:18.470Z\",\n  \"updated_at\": \"2015-11-04T18:13:18.470Z\"\n}",
+      "response_body": "{\n  \"id\": 3,\n  \"name\": \"name\",\n  \"content\": \"content\",\n  \"release_id\": 3,\n  \"position\": 2,\n  \"created_at\": \"2015-11-05T17:45:14.792Z\",\n  \"updated_at\": \"2015-11-05T17:45:14.792Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Location": "http://example.org/api/v1/releases/6/functions/3",
+        "Location": "http://example.org/api/v1/releases/3/functions/3",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"cedd977c25f32522df0c1cbe306238e0\"",
+        "ETag": "W/\"d122b7947b5bc7a403be640eb77953a3\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
         "Set-Cookie": "request_method=POST; path=/",
-        "X-Request-Id": "484e500b-6b1c-4c8e-a24e-ffd6a4116ed2",
-        "X-Runtime": "0.026875",
+        "X-Request-Id": "0a410f1d-441d-419f-93df-da797e772130",
+        "X-Runtime": "0.033412",
         "Content-Length": "150"
       },
       "response_content_type": "application/json; charset=utf-8",

@@ -19,7 +19,7 @@ module API
       end
 
       def user_params
-        params.permit(:email, :password)
+        params.fetch(:user, {}).permit(:email, :password)
       end
     end
   end

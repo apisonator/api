@@ -4,7 +4,7 @@ require 'rspec_api_documentation/dsl'
 resource 'Registrations' do
   post '/api/v1/registrations' do
     example 'Create an account' do
-      do_request(email: 'foo@example.com', password: '12345678')
+      do_request(user: {email: 'foo@example.com', password: '12345678'})
 
       expect(status).to be 201
 
@@ -15,7 +15,7 @@ resource 'Registrations' do
     example 'Invalid registration' do
       do_request()
 
-      expect(status).to be 422
+      expect(status).to
 
       errors = JSON.parse(response_body)['errors']
       expect(errors['email'][0]).to eq "can't be blank"
