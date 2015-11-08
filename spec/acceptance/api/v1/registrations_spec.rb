@@ -15,7 +15,7 @@ resource 'Registrations' do
     example 'Invalid registration' do
       do_request()
 
-      expect(status).to
+      expect(status).to be 422
 
       errors = JSON.parse(response_body)['errors']
       expect(errors['email'][0]).to eq "can't be blank"
