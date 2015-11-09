@@ -24,28 +24,28 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/releases/2/functions/2?api_key=4S5AhptG2VsM1NbCJjSUmM4f",
+      "request_path": "/api/v1/releases/3/functions/3?api_key=NyAGn5tU5X4Wzxq7eZHcTBoy",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
-        "api_key": "4S5AhptG2VsM1NbCJjSUmM4f"
+        "api_key": "NyAGn5tU5X4Wzxq7eZHcTBoy"
       },
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 2,\n  \"name\": \"name\",\n  \"content\": \"content\",\n  \"release_id\": 2,\n  \"position\": null,\n  \"created_at\": \"2015-11-05T17:45:14.537Z\",\n  \"updated_at\": \"2015-11-05T17:45:14.537Z\"\n}",
+      "response_body": "{\n  \"id\": 3,\n  \"name\": \"name\",\n  \"content\": \"content\",\n  \"release_id\": 3,\n  \"position\": null,\n  \"created_at\": \"2015-11-09T17:20:08.094Z\",\n  \"updated_at\": \"2015-11-09T17:20:08.094Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"b0df253824ff0a01050fe65651ac10a6\"",
+        "ETag": "W/\"c8fce4da6ab197564e8b110af18ddb6b\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "69a11729-07bf-4697-9cb7-7f965b057e7b",
-        "X-Runtime": "0.022977",
+        "X-Request-Id": "363edd34-70fd-4ca5-a624-361b5ab7909b",
+        "X-Runtime": "0.022119",
         "Content-Length": "153"
       },
       "response_content_type": "application/json; charset=utf-8",

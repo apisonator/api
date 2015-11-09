@@ -8,8 +8,8 @@ module API
       respond_to :json
 
       def create
-        @user = User.find_by!(email: params[:email])
-        if @user.valid_password?(params[:password])
+        @user = User.find_by!(email: user_params[:email])
+        if @user.valid_password?(user_params[:password])
           respond_with @user
         else
           render status: :unauthorized, text: {error: "unauthorized"}.to_json
@@ -23,7 +23,7 @@ module API
       end
 
       def user_params
-        params.permit(:email, :password)
+        params.fetch(:user, {}).permit(:email, :password)
       end
     end
   end

@@ -18,8 +18,8 @@
   "requests": [
     {
       "request_method": "POST",
-      "request_path": "/api/v1/proxies/foo/releases/6/deploy",
-      "request_body": "api_key=MEM4BEdH9CcUSdiBGov4YedR",
+      "request_path": "/api/v1/proxies/foo/releases/4/deploy",
+      "request_body": "api_key=avqXbP5NriAdHNH7tTbFykHL",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -30,18 +30,18 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 6,\n  \"user_id\": 10,\n  \"version\": \"ZoNMVX9aix5kGkK2iYNMHUct\",\n  \"created_at\": \"2015-11-05T17:45:15.356Z\",\n  \"updated_at\": \"2015-11-05T17:45:15.356Z\",\n  \"config\": {\n    \"middleware\": [\n      \"a\",\n      \"b\",\n      \"c\"\n    ]\n  },\n  \"proxy_id\": 6,\n  \"done\": false\n}",
+      "response_body": "{\n  \"id\": 4,\n  \"user_id\": 14,\n  \"version\": \"Zir2HAgSmxFPt5izrVQNGZXP\",\n  \"created_at\": \"2015-11-09T17:20:08.354Z\",\n  \"updated_at\": \"2015-11-09T17:20:08.354Z\",\n  \"config\": {\n    \"middleware\": [\n      \"a\",\n      \"b\",\n      \"c\"\n    ]\n  },\n  \"proxy_id\": 9,\n  \"done\": false\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Location": "http://example.org/api/v1/releases/6",
+        "Location": "http://example.org/api/v1/releases/4",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"966a60466211f91814745cd2da68dc69\"",
+        "ETag": "W/\"0a00aef3955520e30db726d34dee19db\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
         "Set-Cookie": "request_method=POST; path=/",
-        "X-Request-Id": "02b9d446-2790-47f0-82a8-32de1fee318f",
-        "X-Runtime": "0.026080",
+        "X-Request-Id": "e37dc252-4c8f-4a7f-b6eb-a07debe2e4e9",
+        "X-Runtime": "0.024033",
         "Content-Length": "202"
       },
       "response_content_type": "application/json; charset=utf-8",

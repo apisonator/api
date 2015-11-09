@@ -113,6 +113,13 @@
           "groups": "all",
           "route": "/api/v1/sessions",
           "method": "post"
+        },
+        {
+          "description": "No user params",
+          "link": "sessions/no_user_params.json",
+          "groups": "all",
+          "route": "/api/v1/sessions",
+          "method": "post"
         }
       ]
     }

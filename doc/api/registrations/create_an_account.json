@@ -14,7 +14,7 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/registrations",
-      "request_body": "registration[email]=foo%40example.com&registration[password]=12345678",
+      "request_body": "user[email]=foo%40example.com&user[password]=12345678",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -25,18 +25,18 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 7,\n  \"email\": \"foo@example.com\",\n  \"created_at\": \"2015-11-05T17:45:14.927Z\",\n  \"updated_at\": \"2015-11-05T17:45:14.927Z\",\n  \"api_key\": \"dWJkXgD9qMkbS8q6gETVkcLq\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"email\": \"foo@example.com\",\n  \"created_at\": \"2015-11-09T17:20:06.503Z\",\n  \"updated_at\": \"2015-11-09T17:20:06.503Z\",\n  \"api_key\": \"d79Kv1bm79m1RvwixQX7S548\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Location": "/TODO",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"f8cbb1560a28523693ef7bcc30e3cb5c\"",
+        "ETag": "W/\"326db5e6635aa5e335bad102363c6bdd\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
         "Set-Cookie": "request_method=POST; path=/",
-        "X-Request-Id": "06a5fbdd-8f1b-4a6f-9f64-6dfe134bfb6e",
-        "X-Runtime": "0.123499",
+        "X-Request-Id": "bafbf086-f43a-4954-8c6f-e128759a901c",
+        "X-Runtime": "0.166637",
         "Content-Length": "151"
       },
       "response_content_type": "application/json; charset=utf-8",
