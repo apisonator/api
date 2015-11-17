@@ -38,6 +38,8 @@ resource 'Releases' do
     example 'Creating a release' do
       do_request(config: config)
       expect(status).to be 201
+      hash = JSON.parse(response_body)
+      expect(hash["id"]).to be_present
     end
   end
 

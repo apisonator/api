@@ -8,6 +8,7 @@ module API
       def create
         @release = proxy.releases.build(release_params)
         @release.config = params[:config]
+        @release.save
         respond_with :api, :v1, @proxy, @release
       end
 
